@@ -1,0 +1,19 @@
+
+.MODEL SMALL
+.STACK 100H
+.CODE
+
+MAIN PROC
+    MOV AL,01H
+    INT 21H
+    MOV DL,AL
+    MOV AH,02H
+    INT 21H
+    
+    MOV AH,4CH
+    INT 21H
+    
+    MAIN ENDP
+END MAIN
+
+
